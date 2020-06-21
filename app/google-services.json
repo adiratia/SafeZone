@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "422417141192",
+    "firebase_url": "https://shelter-243a5.firebaseio.com",
+    "project_id": "shelter-243a5",
+    "storage_bucket": "shelter-243a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422417141192:android:3ad1e4f3dfa7e03e2444fd",
+        "android_client_info": {
+          "package_name": "com.e.shelter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422417141192-44a5h8k79oggdjn3ittj3a2kn0gjenrh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkN3QLwPr7EuKe5u4phmqmfROBpZGMo-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422417141192-44a5h8k79oggdjn3ittj3a2kn0gjenrh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

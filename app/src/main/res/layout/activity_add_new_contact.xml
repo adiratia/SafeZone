@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".contactus.AddNewContactActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add new contact"
+        android:textSize="16pt"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/EditText.OutlinedBox.DayNight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:hint="Contact Name (Hebrew)">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/EditText.OutlinedBox.DayNight.Edit"
+            android:layout_width="match_parent"
+            android:id="@+id/contact_name_hebrew_add_contact_page"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/EditText.OutlinedBox.DayNight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:hint="Contact Name (English)">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/EditText.OutlinedBox.DayNight.Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact_name_english_add_contact_page"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/EditText.OutlinedBox.DayNight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="2dp"
+        android:hint="Phone Number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/EditText.OutlinedBox.DayNight.Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact_phone_number_add_contact_page"
+            android:inputType="phone"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add_new_contact_button"
+        android:layout_width="362dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="ADD" />
+
+</LinearLayout>

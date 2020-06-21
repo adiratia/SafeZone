@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TimerActivity">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="0dp"
+        android:src="@drawable/header"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-70dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="25dp"
+        android:textSize="70sp"
+        android:background="@drawable/bg"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="" />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="" />
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ToggleButton
+            android:id="@+id/Toggle"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/start_pause_btn_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chronometer" />
+
+        <ToggleButton
+            android:id="@+id/reset_btn"
+            android:layout_width="100dp"
+            android:layout_height="86dp"
+            android:background="@drawable/reset_btn_timer"
+            android:text="Reset"
+            app:layout_constraintBottom_toBottomOf="@+id/Toggle"
+            app:layout_constraintStart_toEndOf="@+id/Toggle" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

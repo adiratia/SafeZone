@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">SafeZone</string>
+    <string name="title_location_permission" />
+    <string name="text_location_permission" />
+    <string name="ok" />
+
+    <string name="title_activity_main_manu">MainManuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="update">update</string>
+    <string name="capacity">Capacity:</string>
+    <string name="addressWrapper">Address:</string>
+    <string name="name">Name:</string>
+    <string name="status">Status:</string>
+    <string name="edit_shelter_details">Edit Shelter Details</string>
+    <string name="title_activity_favorites">FavoritesActivity</string>
+
+    <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyC3SrcUtXXXXXXXXXXXXXXXXXXXXXX
+    </string>
+    <string name="first_name">First Name</string>
+
+    <!-- Timer Preferences -->
+    <string name="hint_minute">Minute</string>
+    <string name="message_minutes">Please Enter Minutes...</string>
+
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>

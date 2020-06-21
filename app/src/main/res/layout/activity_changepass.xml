@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".settings.ChangePassActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:textSize="19pt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/EditText.OutlinedBox.DayNight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:hint="Current Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/EditText.OutlinedBox.DayNight.Edit"
+            android:id="@+id/oldpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/EditText.OutlinedBox.DayNight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:hint="New Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/EditText.OutlinedBox.DayNight.Edit"
+            android:id="@+id/newpass"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/EditText.OutlinedBox.DayNight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:hint="Re-enter Your New Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/EditText.OutlinedBox.DayNight.Edit"
+            android:id="@+id/newpass2"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/changepass_button"
+        android:layout_width="362dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Change" />
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="230dp"
+        android:layout_height="202dp"
+        app:srcCompat="@drawable/safezone_unshadow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/EditText.OutlinedBox.DayNight.Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:hint="Email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/EditText.OutlinedBox.DayNight.Edit"
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/EditText.OutlinedBox.DayNight.Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="25dp"
+        android:hint="Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/EditText.OutlinedBox.DayNight.Edit"
+            android:id="@+id/passInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/LoginButton"
+        android:layout_width="362dp"
+        android:layout_height="60dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        app:strokeColor="@color/colorPrimaryDark"
+        android:backgroundTint="@color/yellow_600"
+        app:strokeWidth="1dp"
+        android:text="Login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/forgot_your_password_clickable_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:text="Forgot your password?" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signUpButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:stateListAnimator="@null"
+        android:text="Register"
+        android:textColor="@color/colorPrimaryDark"
+        app:rippleColor="@color/grey_40"
+        app:strokeColor="@color/colorPrimaryDark"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="" />
+
+    <ProgressBar
+        android:id="@+id/news_loading_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTintMode="src_atop"
+        android:visibility="invisible"
+        android:indeterminateTint="@color/quantum_googblue"
+        android:layout_gravity="center" />
+
+
+</LinearLayout>
+
+

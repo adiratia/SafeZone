@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">@color/white</color>
+    <!--    <color name="colorPrimaryDark">@color/quantum_bluegrey950</color>-->
+    <color name="colorPrimaryDark">#202B3E</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- Edit Text -->
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">@color/grey_40
+    </color>
+
+    <!-- Switch Colors -->
+    <color name="disable_forground_grey">#777777</color>
+    <color name="disable_thumb_grey">#ACACAC</color>
+    <color name="enable_thumb_green">#46BDBF</color>
+    <color name="colorPrimary1">#52dbfe</color>
+    <color name="colorPrimaryDark1">#369ee3</color>
+    <color name="colorAccent1">#D81B60</color>
+
+    <color name="grey_3">#f7f7f7</color>
+    <color name="grey_5">#f2f2f2</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_90">#263238</color>
+    <color name="grey_95">#1a1a1a</color>
+    <color name="grey_100_">#0d0d0d</color>
+
+    <color name="yellow_50">#FFFDE7</color>
+    <color name="yellow_100">#FFF9C4</color>
+    <color name="yellow_200">#FFF59D</color>
+    <color name="yellow_300">#FFF176</color>
+    <color name="yellow_400">#FFEE58</color>
+    <color name="yellow_500">#FFEB3B</color>
+    <color name="yellow_600">#FDD835</color>
+    <color name="yellow_700">#FBC02D</color>
+    <color name="yellow_800">#F9A825</color>
+    <color name="yellow_900">#F57F17</color>
+    <color name="yellow_A100">#FFFF8D</color>
+    <color name="yellow_A200">#FFFF00</color>
+    <color name="yellow_A400">#FFEA00</color>
+    <color name="yellow_A700">#FFD600</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

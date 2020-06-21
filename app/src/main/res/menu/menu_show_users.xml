@@ -1,0 +1,45 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.e.shelter.ShowUsersActivity">
+
+    <item
+        android:id="@+id/action_search_users"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/action_show_all_accounts"
+        android:orderInCategory="100"
+        android:title="Show all accounts"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_show_admins"
+        android:orderInCategory="100"
+        android:title="Show admin accounts"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_show_regular_users"
+        android:orderInCategory="100"
+        android:title="Show regular accounts"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_show_blocked_users"
+        android:orderInCategory="100"
+        android:title="Show blocked accounts"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_show_unblocked_users"
+        android:orderInCategory="100"
+        android:title="Show unblocked accounts"
+        app:showAsAction="never" />
+
+
+
+</menu>

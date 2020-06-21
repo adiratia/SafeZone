@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView android:id="@+id/card"
+    style="@style/MaterialSearchBarLight"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:layout_marginTop="10dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    tools:ignore="MissingConstraints"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-16dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+
+                <TextView
+                    android:id="@+id/favCardShelterName"
+                    android:layout_width="wrap_content"
+                    android:text="Name: "
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center" />
+
+
+                <TextView
+                    android:id="@+id/favCardAddress"
+                    android:text="Address: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/favCardRemoveButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:backgroundTint="@color/quantum_googred700"
+                    android:text="Remove"
+                    android:clickable="true"
+                    app:mt_borderlessRippleEnabled="true"
+                    app:icon="@drawable/delete_icon_white"
+                    tools:ignore="MissingConstraints" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/favCardNavigateButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="@color/quantum_cyan"
+                    android:text="Navigate"
+                    app:mt_borderlessRippleEnabled="true"
+                    app:icon="@drawable/navigation_icon_white"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+

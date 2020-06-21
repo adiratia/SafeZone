@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group>
+
+        <item android:title="General">
+
+            <menu>
+                <item android:id="@+id/nav_night_mode_switch"
+                    app:actionLayout="@layout/action_view_switch"
+                    android:title="Night mode"
+                    android:icon="@drawable/nightmode_icon_black"/>
+
+                <item android:id="@+id/nav_favorite_shelters"
+                    android:title="Favorites"
+                    android:icon="@drawable/favorite_icon_black"/>
+                <item android:id="@+id/nav_timer"
+                    android:title="Timer"
+                    android:icon="@drawable/ic_timer_black_24dp"/>
+
+                <item android:id="@+id/nav_news"
+                    android:title="News"
+                    android:icon="@drawable/googleg_standard_color_18"/>
+
+                <item
+                    android:id="@+id/nav_show_reviews"
+                    android:icon="@drawable/ic_star"
+                    android:title="Show User Reviews" />
+
+                <item
+                    android:id="@+id/nav_global_message"
+                    android:icon="@drawable/comment_icon_black"
+                    android:title="Global Message" />
+
+
+            </menu>
+        </item>
+        <item android:title="Account">
+            <menu>
+                <item android:id="@+id/nav_show_user"
+                    android:title="Show Users"
+                    android:icon="@drawable/ic_people_black"/>
+
+                <item
+                    android:id="@+id/nav_settings"
+                    android:icon="@drawable/settings_icon_black"
+                    android:title="Settings" />
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout_icon_black"
+                    android:title="Log out" />
+
+            </menu>
+        </item>
+        <item android:title="About">
+            <menu>
+                <item
+                    android:id="@+id/nav_info"
+                    android:icon="@drawable/info_icon_black"
+                    android:title="Information" />
+
+            </menu>
+        </item>
+
+    </group>
+</menu>

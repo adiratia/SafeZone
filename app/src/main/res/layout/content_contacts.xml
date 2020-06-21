@@ -1,0 +1,98 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/contactCard"
+        style="@style/MaterialSearchBarLight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+
+                <TextView
+                    android:id="@+id/contactCardContactName"
+                    android:layout_width="wrap_content"
+                    android:text="Name: "
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"
+                    android:textSize="7pt"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center" />
+
+
+                <TextView
+                    android:id="@+id/contactCardContactPhone"
+                    android:text="NUMBER"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:textSize="10pt"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/contactCardRemoveButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/quantum_googred700"
+                    android:text="Remove"
+                    android:clickable="true"
+                    app:mt_borderlessRippleEnabled="true"
+                    app:icon="@drawable/delete_icon_white"
+                    tools:ignore="MissingConstraints" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/contactCardCallButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="@color/quantum_googgreen"
+                    android:text="Call"
+                    app:mt_borderlessRippleEnabled="true"
+                    app:icon="@drawable/call_icon_black"
+                    tools:ignore="MissingConstraints" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/contactCardEditButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="@color/quantum_cyan"
+                    android:text="Edit"
+                    app:mt_borderlessRippleEnabled="true"
+                    app:icon="@drawable/edit_icon_black"
+                    tools:ignore="MissingConstraints" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.core.widget.NestedScrollView>

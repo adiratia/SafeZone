@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".GlobalMessage" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Global Message"
+        android:textSize="20pt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/EditText.OutlinedBox.DayNight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:hint="Subject">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/EditText.OutlinedBox.DayNight.Edit"
+            android:id="@+id/subject_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/EditText.OutlinedBox.DayNight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:hint="Message">
+
+        <com.google.android.material.textfield.TextInputEditText
+            style="@style/EditText.OutlinedBox.DayNight.Edit"
+            android:id="@+id/messageText"
+            android:layout_width="match_parent"
+            android:layout_height="215dp"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sendSmsButton"
+        android:layout_width="362dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Send" />
+
+</LinearLayout>

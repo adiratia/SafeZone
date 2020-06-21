@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Jenkins.Application.Settings">
+    <option name="rssSettings">
+      <RssSettings>
+        <option name="displayAborted" value="false" />
+      </RssSettings>
+    </option>
+    <option name="serverUrl" value="http://147.234.32.36/" />
+    <option name="useGreenColor" value="true" />
+  </component>
+</project>

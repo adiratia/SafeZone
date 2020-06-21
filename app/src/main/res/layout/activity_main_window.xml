@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".map.MapViewActivity"
+    tools:openDrawer="start">
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:scrollbars="none"
+        android:scrollbarSize="0dp"
+        app:headerLayout="@layout/header"
+        style="@style/AppTheme.NavigationBar"
+        app:menu="@menu/main_menu" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".map.MapViewActivity">
+
+        <com.e.shelter.map.MapWrapperLayout
+            android:id="@+id/map_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <fragment
+                android:id="@+id/mapAPI"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.e.shelter.map.MapViewActivity" />
+
+        </com.e.shelter.map.MapWrapperLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/shelter_info_sheet" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+<!--        <com.mancj.materialsearchbar.MaterialSearchBar-->
+<!--            android:id="@+id/searchBar"-->
+<!--            style="@style/MaterialSearchBarLight"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="16dp"-->
+<!--            android:elevation="5dp"-->
+<!--            android:outlineProvider="bounds"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:mt_borderlessRippleEnabled="true"-->
+<!--            app:mt_maxSuggestionsCount="10"-->
+<!--            app:mt_navIconEnabled="true"-->
+<!--            app:mt_placeholder="Search here"-->
+<!--            app:mt_speechMode="false"-->
+<!--            tools:ignore="MissingConstraints"-->
+<!--            tools:layout_editor_absoluteX="16dp" />-->
+
+        <com.arlib.floatingsearchview.FloatingSearchView
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:floatingSearch_searchBarMarginLeft="10dp"
+            app:floatingSearch_searchBarMarginTop="10dp"
+            app:floatingSearch_searchBarMarginRight="10dp"
+            app:floatingSearch_searchHint="Search here"
+            app:floatingSearch_suggestionsListAnimDuration="250"
+            app:floatingSearch_searchSuggestionTextSize="14dp"
+            app:floatingSearch_showSearchKey="true"
+            app:floatingSearch_leftActionMode="showHamburger"
+            app:floatingSearch_dismissOnOutsideTouch="true"
+            app:floatingSearch_dividerColor="@color/quantum_bluegrey50"
+            app:floatingSearch_close_search_on_keyboard_dismiss="true"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+
+
+

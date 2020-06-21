@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    android:background="@drawable/linearlayout_shadow"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:layout_width="30dp"
+            android:layout_height="6dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/dark_background"
+            app:cardBackgroundColor="@color/grey_20" />
+
+        <TextView
+            android:id="@+id/info_window_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_xxlarge"
+            android:layout_marginEnd="@dimen/spacing_xxlarge"
+            android:gravity="center"
+            android:minHeight="0dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="***"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_xxlarge"
+                android:layout_marginEnd="@dimen/spacing_xxlarge"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatRatingBar
+                    style="@style/Yellow.Small.AppCompatRatingBar"
+                    android:id="@+id/rating_bar_info_window"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="85dp"
+                    android:gravity="center"
+                    android:numStars="5"
+                    android:rating="0.0"
+                    android:stepSize="0.5"
+                    android:theme="@style/Yellow.Small.AppCompatRatingBar" />
+
+                <TextView
+                    android:id="@+id/info_window_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:text="0.0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <TextView
+                    android:id="@+id/info_window_rating_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="75dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="(0)"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center">
+
+                <com.google.android.material.button.MaterialButton
+                    android:textSize="14dp"
+                    app:iconSize="20dp"
+                    android:id="@+id/info_window_save_button"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:backgroundTint="@color/white"
+                    android:stateListAnimator="@null"
+                    android:text="SAVE  "
+                    android:textColor="@color/colorPrimaryDark"
+                    app:cornerRadius="@dimen/corner_radius_rounded"
+                    app:icon="@drawable/savebookmark_icon_black"
+                    app:iconTint="@color/colorPrimaryDark"
+                    app:rippleColor="@color/grey_40"
+                    app:strokeColor="@color/colorPrimary"
+                    app:strokeWidth="0dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:textSize="14dp"
+                    app:iconSize="20dp"
+                    android:id="@+id/info_window_edit_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:backgroundTint="@color/white"
+                    android:stateListAnimator="@null"
+                    android:text="EDIT"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:cornerRadius="@dimen/corner_radius_rounded"
+                    app:icon="@drawable/edit_icon_black"
+                    app:iconTint="@color/colorPrimaryDark"
+                    app:rippleColor="@color/grey_40"
+                    app:strokeColor="@color/colorPrimary"
+                    app:strokeWidth="0dp" />
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:textSize="14dp"
+                    app:iconSize="20dp"
+                    android:id="@+id/info_window_rate_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:backgroundTint="@color/white"
+                    android:stateListAnimator="@null"
+                    android:text="RATE"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:cornerRadius="@dimen/corner_radius_rounded"
+                    app:icon="@drawable/rate_icon_white"
+                    app:iconTint="@color/colorPrimaryDark"
+                    app:rippleColor="@color/grey_40"
+                    app:strokeColor="@color/colorPrimary"
+                    app:strokeWidth="0dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:textSize="14dp"
+                    app:iconSize="20dp"
+                    android:id="@+id/info_window_share_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:backgroundTint="@color/white"
+                    android:stateListAnimator="@null"
+                    android:text="SHARE"
+                    android:textColor="@color/colorPrimaryDark"
+                    app:cornerRadius="@dimen/corner_radius_rounded"
+                    app:icon="@drawable/share_icon_black"
+                    app:iconTint="@color/colorPrimaryDark"
+                    app:rippleColor="@color/grey_40"
+                    app:strokeColor="@color/colorPrimary"
+                    app:strokeWidth="0dp" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/address_icon_black"
+                        android:tint="@color/grey_10" />
+
+                    <View
+                        android:layout_width="@dimen/spacing_mxlarge"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:id="@+id/info_window_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/addressWrapper"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_marginStart="16dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/capacity_icon_black"
+                        android:tint="@color/grey_20" />
+
+                    <View
+                        android:layout_width="@dimen/spacing_mxlarge"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:id="@+id/info_window_capacity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/capacity"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_marginStart="16dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/time_icon_black"
+                        android:tint="@color/grey_20" />
+
+                    <View
+                        android:layout_width="@dimen/spacing_mxlarge"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:id="@+id/info_window_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/status"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
