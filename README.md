@@ -1,2 +1,3 @@
 # SafeZone
-Android Application
+Android Application , developed in Java language.
+
